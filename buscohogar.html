@@ -1,0 +1,90 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Propiedades</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fuente Inter para una mejor legibilidad */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Un color de fondo suave */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-md border border-gray-200">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Encuentra tu Propiedad Ideal</h1>
+        <p class="text-center text-gray-600 mb-8">
+            Por favor, déjanos tus datos y una breve descripción de lo que buscas.
+            Nos pondremos en contacto contigo a la brevedad.
+        </p>
+
+        <form class="space-y-6">
+            <!-- Campo para el Nombre -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Tu nombre y apellido"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    required
+                >
+            </div>
+
+            <!-- Campo para el Teléfono -->
+            <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Ej: +XX XXX XXXX XXX"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    required
+                >
+            </div>
+
+            <!-- Campo para el Email -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu.email@ejemplo.com"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    required
+                >
+            </div>
+
+            <!-- Campo para la Descripción de lo que Busca -->
+            <div>
+                <label for="description" class="block text-sm font-medium text-gray-700 mb-1">
+                    ¿Qué tipo de propiedad buscas? (Ej: Casa con 3 habitaciones, apartamento en el centro, terreno para construir)
+                </label>
+                <textarea
+                    id="description"
+                    name="description"
+                    rows="4"
+                    placeholder="Describe tu propiedad ideal..."
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Botón de Envío -->
+            <button
+                type="submit"
+                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+            >
+                Enviar Solicitud
+            </button>
+        </form>
+    </div>
+</body>
+</html>
